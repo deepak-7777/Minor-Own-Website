@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2 class="logo">Deepak<span> Kumar.</span></h2>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- HERO (same as before) -->
+<section id="home" class="hero hero-new">
+
+    <!-- LEFT SOCIAL ICONS -->
+    <div class="hero-social">
+        <a href="https://github.com/deepak-7777" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/deepak_00.07" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/deepak-kumar-243040334" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <!-- TEXT CONTENT -->
+    <div class="hero-text">
+        <h4>Hello, I'm</h4>
+        <h1>Mr Deepak</h1>
+        <h3>Android Developer or Java Developer</h3>
+
+        <p>
+           I love building clean, efficient, and user-focused applications that transform ideas into impactful digital experiences.
+        </p>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="hero-image">
+        <img src="deepak07.jpeg" alt="Hero Image">
+    </div>
+
+</section>
+
+
+<!-- 🔥 ABOUT SECTION (IMAGE STYLE MATCH) -->
+<section id="about" class="section about-section">
+    <div class="about-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-image">
+            <img src="about.png" alt="About Image">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-content">
+            <h2>About Me</h2>
+            <h4 class="about-subtitle">Introduction</h4>
+
+            <p class="about-desc">
+                I’m a developer skilled in both Android and web development, 
+                currently working with Java, Data Structures & Algorithms, and Spring Boot 
+                to build clean, efficient, and user-friendly digital solutions.
+            </p>
+
+            <div class="about-info">
+                <p><i class="fas fa-user"></i> <strong>Name</strong><br> Deepak kumar</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email</strong><br> deepak0797dk@gmail.com</p>
+                <p><i class="fas fa-phone"></i> <strong>Phone No.</strong><br> 9128275885</p>
+            </div>
+
+            <div class="about-resume">
+        <a href="resume.pdf" target="_blank" class="btn primary">
+        View Resume
+        </a>
+    </div>
+
+    </div>
+
+    </div>
+</section>
+
+
+<!-- 🔼 SKILLS SECTION (NOW ABOVE SERVICES) -->
+<section id="skills" class="section skills-section">
+    <h2>My Skills</h2>
+    <h4 class="section-subtitle">Technologies I Work With</h4>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+            <p>Java, Kotlin, Python, C, JavaScript</p>
+            <span class="learn-more" onclick="openSkill('programming')">Learn More</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <span class="learn-more" onclick="openSkill('web')">Learn More</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-android"></i>
+            <h3>Android Development</h3>
+            <p>Java, Kotlin, Firebase</p>
+            <span class="learn-more" onclick="openSkill('android')">Learn More</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Database & Backend</h3>
+            <p>SQLite, MySQL, Firebase</p>
+            <span class="learn-more" onclick="openSkill('database')">Learn More</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-brain"></i>
+            <h3>DSA</h3>
+            <p>Data Structures & Algorithms</p>
+            <span class="learn-more" onclick="openSkill('dsa')">Learn More</span>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-tools"></i>
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code</p>
+            <span class="learn-more" onclick="openSkill('tools')">Learn More</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- POPUP -->
+<div class="skill-popup" id="skillPopup">
+    <div class="popup-box">
+        <span class="close-btn" onclick="closeSkill()">×</span>
+        <h3 id="popupTitle"></h3>
+        <ul class="popup-list" id="popupList"></ul>
+    </div>
+</div>
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section projects-section">
+    <h2>My Projects</h2>
+    <h4 class="section-subtitle">Some of My Work</h4>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+<!-- PROJECT 1 -->
+<div class="project-card">
+    <img src="codequerst.jpeg" alt="Android App Project">
+
+    <div class="project-content">
+        <h3>Coding Quiz App</h3>
+        <p>
+            A quiz-based Android application built with Java
+             and Firebase-backed data management.
+        </p>
+
+        <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.vmpk.codequerst" target="_blank"  class="btn primary">
+                Play Store
+            </a>
+
+            <a href="https://github.com/deepak-7777/CodeQuerst"   target="_blank"  class="btn secondary">
+                GitHub Repo
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <img src="notes.png" alt="Notes App Project">
+
+            <div class="project-content">
+                <h3>Notes App</h3>
+                <p>
+                    Android Notes application using SQLite & Firebase with
+                    CRUD operations and clean UI.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://github.com/deepak-7777/Note" target="_blank" class="btn secondary">
+                        GitHub Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <img src="flipkart.png" alt="Flipkart Clone">
+
+            <div class="project-content">
+                <h3>Flipkart Clone</h3>
+                <p>
+                    A frontend clone of Flipkart built using HTML, CSS, and 
+                    JavaScript,focusing on responsive layout.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://github.com/deepak-7777/CSS-Code" target="_blank" class="btn secondary">
+                        GitHub Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <h4 class="section-subtitle">Connect With Us</h4>
+
+    <form class="contact-form" id="contactForm">
+    <input type="text" id="name" placeholder="Your Name *" required>
+    <input type="email" id="email" placeholder="Your Email *" required>
+    <input type="tel" id="phone" placeholder="Your Number">
+    <textarea id="message" placeholder="Your Message *" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+</section>
+
+
+<!-- FOLLOW US SECTION -->
+<section class="follow-section">
+    <h2>Follow Us</h2>
+
+    <div class="follow-icons">
+
+        <!-- Linkdin -->
+        <a href="https://www.linkedin.com/in/deepak-kumar-243040334" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/deepak_00.07?igsh=MXgwdjY0c3Z2cHd2bA==" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a href="#" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@globalxwar7?si=algbIwbPZ3I96pJo" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <p>© Deepak Kumar | All Right Reserved.</p>
+</footer>
+
+
+ <!-- FIREBASE CONNECTION -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

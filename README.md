@@ -1,4 +1,4 @@
-# 📂 Portfolio Website
+# Portfolio Website
 
 This repository contains my **personal portfolio website** where I showcase my skills, projects, and professional information. It is designed to represent my work, experience, and development journey in a structured and visually appealing way.
 

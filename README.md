@@ -23,7 +23,7 @@ The purpose of this portfolio is to create an online presence where visitors can
 
 ## 🛠️ Tech Used
 
-* HTML5 
+* HTML5  
 * CSS3
 * JavaScript
 

@@ -7,7 +7,7 @@ This repository contains my **personal portfolio website** where I showcase my s
 ## 📚 About
 
 The purpose of this portfolio is to create an online presence where visitors can explore my technical skills, view my projects, and connect with me through social platforms.
-
+ 
 ---
 
 ## 🚀 Features
